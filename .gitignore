@@ -1,0 +1,16 @@
+node_modules
+.project
+.settings
+.DS_Store
+build.log
+build
+npm-debug.log
+tmp
+Resources
+Resources/*
+Resources*
+/Resources/*
+/.idea/
+/design/export/
+/mobile/design/export/
+.metadata

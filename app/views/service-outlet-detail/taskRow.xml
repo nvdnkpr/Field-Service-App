@@ -1,0 +1,8 @@
+<Alloy>
+	<TableViewRow class="container">
+		<Label id="category">Category</Label>
+		<Label id="description"/>
+		<Widget src="com.appcelerator.globalTimer" id="timer" />
+		<View id="caret_icon"/>
+	</TableViewRow>
+</Alloy>

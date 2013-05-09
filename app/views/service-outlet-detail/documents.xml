@@ -1,0 +1,21 @@
+<Alloy>
+	<!--<Collection src="labor" />-->
+	<View id="wrapper">
+		<TableView id="docList" onClick="openDetail">
+			<TableViewRow class="row">
+				<Label id="name">Name</Label>
+				<View class="vSeperator"/>
+				<Label id="description">Description</Label>
+				<Button id="type">PNG</Button>
+				<View class="detailIcon"/>
+			</TableViewRow>
+			<TableViewRow class="row">
+				<Label id="name">New Product</Label>
+				<View class="vSeperator"/>
+				<Label id="description">Description</Label>
+				<Button id="type">PDF</Button>
+				<View class="detailIcon"/>
+			</TableViewRow>
+		</TableView>
+	</View>
+</Alloy>

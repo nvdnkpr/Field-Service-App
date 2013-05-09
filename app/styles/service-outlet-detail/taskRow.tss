@@ -1,0 +1,49 @@
+".container": {
+	height: 44
+},
+"#category": {
+	width: "20%",
+	left: 0,
+	textAlign: "center",
+	font: {
+		fontWeight: "bold"
+	},
+	touchEnabled: false
+},
+"#description": {
+	right: 167,
+	left: "20%",
+	width: Ti.UI.FILL,
+	paddingLeft: 10,
+	touchEnabled: false
+},
+"#activeContainer": {
+	right: 44,
+	width: 125,
+	visible: false,
+	touchEnabled: false
+},
+"#currentTime": {
+	backgroundImage: "/service-outlet-detail/row-totals-task-bg.png",
+	height: 24,
+	width: 109,
+	right: 44,
+	font: {
+		fontSize: 12
+	},
+	touchEnabled: false
+},
+"#timer": {
+	right: 45,
+	width: 140,
+	top: 0,
+	height: 44
+}
+"#caret_icon": {
+	backgroundImage: "/service-outlet-detail/detail-icon.png",
+	bottom: 27,
+	width: 7,
+	height: 10,
+	right: 18,
+	touchEnabled: false
+}

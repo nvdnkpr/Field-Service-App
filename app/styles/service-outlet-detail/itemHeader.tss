@@ -1,0 +1,59 @@
+"#header": {
+	top: 10,
+	width: 609,
+	height: 46,
+	backgroundImage: "/service-outlet-detail/sub-view-header-bg.png"
+},
+"#wrapper": {
+	width: 609,
+	height: 46
+}
+"#titleContainer": {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL
+},
+"#itemCountView": {
+	height: 44,
+	width: Ti.UI.SIZE,
+	left: 0,
+	backgroundImage: "/service-outlet-detail/row-totals-bg-flex.png",
+	backgroundLeftCap: 4
+},
+"#lblItemCount": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	color: "#FFF",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#title": {
+	left: 10,
+	height: Ti.UI.FILL,
+	color: "#fff",
+	font: {
+		fontSize: 20,
+		fontWeight: "bold"
+	}
+},
+"#caretIcon": {
+	backgroundImage: "/common/caret-icon-white.png",
+	height: 7,
+	width: 0,
+	left: 5
+},
+"#rightNavButton": {
+	right: 10,
+	height: 44,
+	width: 44,
+	color: "#FFF"
+},
+"#leftNavButton": {
+	left: 10,
+	height: 44,
+	width: 44,
+	color: "#FFF"
+}

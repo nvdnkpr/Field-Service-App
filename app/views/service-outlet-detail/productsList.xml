@@ -1,0 +1,11 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="searchView">
+			<View id="searchIcon" />
+			<TextField id="txtSearch" onChange="filter"/>
+		</View>
+		<View id="tableViewContainer">
+			<TableView id="productsTable" onClick="getRowData"/>
+		</View>
+	</View>
+</Alloy>

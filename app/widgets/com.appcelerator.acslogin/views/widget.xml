@@ -1,0 +1,40 @@
+<Alloy>
+	<View id="acsloginMain">
+		<View id="loginContainer">
+			<View id="titleContainer">
+				<View id="header"/>
+				<View id="divider"/>
+				<Label class="acsloginMsg" id="msgLbl"/>
+			</View>
+			<View id="bodyContainer">
+				<View id="acsLogin">
+					<TextField class="acsLoginTxt" id="usernameTxt" onReturn="focusPassword" onFocus="focusStyle" onBlur="blurStyle"/>
+					<TextField class="acsLoginTxt" id="passwordTxt" onFocus="focusStyle" onBlur="blurStyle"/>
+					<View class="controlContainer">
+						<Button id="helpImg" onClick="forgotClick"/>
+						<Label class="acsloginLbl" id="forgotLbl" class="acsloginLbl" onClick="forgotClick">Forgot Password</Label>
+						<View class="acsLoginBtn" id="loginBtn" onClick="loginClick">
+							<Label id="loginLbl">Login</Label>
+						</View>		
+					</View>
+					<!-- <Button class="acsLoginBtn" id="accountBtn" onClick="createAccountClick">Create Account</Button>-->
+				</View>
+				<View id="acsloginPass">
+					<TextField class="acsLoginTxt" id="emailTxt" onFocus="focusStyle" onBlur="blurStyle"/>
+					<View class="controlContainer">
+						<Button class="acsLoginBtn" id="emailBtn" onClick="remindClick">Reset</Button>
+						<Button class="acsLoginBtn" id="cancelBtn" onClick="cancelClick">Cancel</Button>
+					</View>
+				</View>
+				<!-- <View id="acsloginAccount">
+					<Label class="acsloginMsg" id="accountLbl"/>
+					<TextField class="acsLoginTxt" id="usernameNew"/>
+					<TextField class="acsLoginTxt" id="passwordNew"/>
+					<TextField class="acsLoginTxt" id="passwordConfirm"/>
+					<Button class="acsLoginBtn" id="createBtn" onClick="createClick">Create Account</Button>
+					<Label class="acsloginLbl" id="loginLbl" onClick="loginlinkClick">Login</Label>
+				</View> -->
+			</View>
+		</View>
+	</View>
+</Alloy> 

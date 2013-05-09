@@ -1,0 +1,37 @@
+"#wrapper": {
+	width: 609,
+	height: 558,
+	backgroundImage: "/service-outlet-detail/sub-view-content-bg.png"
+},
+"#mainContainer": {
+	layout: "vertical"
+},
+"Button": {
+	top: "5dp",
+	height: "35dp",
+	width: "50dp",
+	backgroundTopCap: "10dp",
+	backgroundLeftCap: "10dp",
+	color: "#fff",
+	font: {
+		fontSize: "14dp",
+		fontWeight: "bold"
+	}
+},
+"TableView": {
+	top: 25,
+	left: 20,
+	right: 20,
+	height: Ti.UI.SIZE
+},
+"#activeTask": {
+	height: 60
+},
+"#taskTable": {
+	bottom: 20
+},
+"#header": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 44
+}

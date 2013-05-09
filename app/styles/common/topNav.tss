@@ -1,0 +1,93 @@
+"#wrapper": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 50,
+	backgroundImage: "/top-nav/nav-bar-bg.png"
+},
+".typeView": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#appcLogo": {
+	height: 50,
+	width: 50,
+	left: 0,
+	backgroundImage: "/top-nav/appc-logo.png"
+},
+".label_title": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 24
+	},
+	color: "#FFF",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+".view_right": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: 0,
+	layout: "horizontal"
+},
+".divider": {
+	backgroundImage: "/top-nav/divider.png",
+	width: 1,
+	height: 50,
+	left: 0
+},
+".button_help": {
+	left: 0,
+	height: 50,
+	width: 49,
+	backgroundImage: "/top-nav/help-btn.png",
+	backgroundSelectedImage: "/top-nav/help-btn-touch.png"
+},
+"#btnHome": {
+	left: 0,
+	height: 50,
+	width: 49,
+	backgroundImage: "/top-nav/home-btn.png",
+	backgroundSelectedImage: "/top-nav/home-btn-touch.png"
+},
+"#btnRefresh": {
+	left: 0,
+	height: 50,
+	width: 49,
+	backgroundImage: "/top-nav/refresh-btn.png",
+	backgroundSelectedImage: "/top-nav/refresh-btn-touch.png"
+},
+"#btnAdd": {
+	left: 0,
+	height: 50,
+	width: 49,
+	backgroundImage: "/top-nav/add-btn.png",
+	backgroundSelectedImage: "/top-nav/add-btn-touch.png"
+},
+"#btnCamera": {
+	left: 0,
+	height: 50,
+	width: 49,
+	backgroundImage: "/top-nav/camera-btn.png",
+	backgroundSelectedImage: "/top-nav/camera-btn-touch.png"
+},
+"#profile": {
+	right: 5,
+	height: 50,
+	width: 135,
+	title: "Logout",
+	backgroundImage: "/my-service-outlets/profile-bar-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/profile-bar-btn-touch.png"
+},
+"#userImage": {
+	left: 4,
+	height: 22,
+	width: 22
+}
+"#userName": {
+	minimumFontSize: 6,
+	height: 22,
+	left: 35,
+	right: 25,
+	color: "#ffffff",
+	verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
+}

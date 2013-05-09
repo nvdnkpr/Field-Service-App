@@ -1,0 +1,21 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="titleContainer">
+			<Label id="lblTitle" class="Name">Title</Label>
+			<TextField id="lblContent">End Cap</TextField>
+		</View>	
+		<Label id="lblComments">Comments</Label>
+		<TextField id="tfComments"/>
+		<View id="vBody">
+			<View id="vLeft">
+				<Button id="btnShare" onClick="shareDoc"/>
+				<View id="vType">
+					<Label class="Name">Type</Label>
+					<Label id="lblType" class="Contents">PNG</Label>
+				</View>
+			</View>
+			<WebView id="webView"/>
+			<ImageView id="imageView"/>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,33 @@
+"#container": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	borderRadius: 3
+},
+"Button": {
+	height: 43,
+	width: 47,
+	bottom: 10,
+	zIndex: 100
+},
+"#map": {
+	regionFit: true,
+	userLocation: false
+},
+"#locationBtn": {
+	right: 53,
+	backgroundImage: "/my-service-outlets/map-mini-directions-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/map-mini-directions-btn-touch.png"
+
+},
+"#zoomBtn": {
+	right: 10,
+	backgroundImage: "/my-service-outlets/map-mini-search-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/map-mini-search-btn-touch.png"
+},
+"#closeBtn": {
+	left: 10,
+	width: 51,
+	backgroundImage: "/my-service-outlets/map-mini-close-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/map-mini-close-btn-touch.png"
+
+}

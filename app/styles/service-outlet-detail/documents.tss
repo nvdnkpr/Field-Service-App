@@ -1,0 +1,58 @@
+"#wrapper": {
+	width: 609,
+	height: 558,
+	backgroundImage: "/service-outlet-detail/sub-view-content-bg.png"
+},
+"#docList": {
+	top: "25dp",
+	width: "95%",
+	height: Ti.UI.SIZE
+},
+"#docList[platform=ios]": {
+	editable: true,
+	moveable: false
+},
+"#header": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 44
+},
+".row": {
+	left: 10,
+	right: 10,
+	height: 44,
+	borderColor: "#CDCDCD"
+},
+"#name": {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	left: 10,
+	width: 80,
+	font: {
+		fontWeight: "bold"
+	}
+},
+".vSeperator": {
+	height: 44,
+	left: 100,
+	width: 1,
+	backgroundColor: "#CDCDCD"
+},
+"#description": {
+	left: 110,
+	width: 400,
+	height: 44
+},
+"#type": {
+	left: 490,
+	height: 30,
+	widht: 50,
+	font: {
+		fontWeight: "bold"
+	}
+},
+".detailIcon": {
+	backgroundImage: "/service-outlet-detail/detail-icon.png",
+	width: 7,
+	height: 10,
+	left: 560
+}

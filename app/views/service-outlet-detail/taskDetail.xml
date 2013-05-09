@@ -1,0 +1,33 @@
+<Alloy>
+	<View id="wrapper">
+		<ScrollView id="scrollContainer">
+			<View class="view_container" id="typeContainer">
+				<Label class="label_title">Type</Label>
+				<!-- <Label id="lblTypeValue" /> -->
+				<TextField id="txtType" />
+				<View class="rightArrow" />
+			</View>
+			<View class="view_container" id="timeContainer">
+				<Label class="label_title">Total Time</Label>
+				<Widget src="com.appcelerator.timer" id="totalTime" />
+			</View>
+			<Label class="label_subtitle">Comments</Label>
+			<TextArea id="txtComments" />
+			<View class="view_addTitle">
+				<Label class="label_subtitle" id="lblRelatedProducts">Related Products</Label>
+				<Button class="button_addType" id="btnAddProduct" onClick="showProducts" />
+			</View>
+			<View id="vAddProducts" class="view_addType" onClick="deleteProducts" />
+			<View class="view_addTitle">
+				<Label class="label_subtitle" id="lblRelatedExpenses">Related Expenses</Label>
+				<Button class="button_addType" id="btnAddExpense" onClick="showExpenses" />
+			</View>
+			<View id="vAddExpenses" class="view_addType" onClick="deleteExpenses" />
+			<View class="view_addTitle">
+				<Label class="label_subtitle" id="lblRelatedDocuments">Related Documents</Label>
+				<Button class="button_addType" id="btnAddDocument" onClick="showDocuments" />
+			</View>
+			<View id="vAddDocuments" class="view_addType" onClick="deleteDocuments" />
+		</ScrollView>
+	</View>
+</Alloy>

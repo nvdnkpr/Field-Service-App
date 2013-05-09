@@ -1,0 +1,73 @@
+"#wrapper": {
+	width: 609,
+	height: 558,
+	backgroundImage: "/service-outlet-detail/sub-view-content-bg.png"
+},
+"mainContainer": {
+	layout: "vertical"
+},
+"#sectionTitle": {
+	color: "#fff",
+	font: {
+		fontSize: "24dp",
+		fontWeight: "bold"
+	},
+	left: "10dp"
+},
+"Button": {
+	top: "5dp",
+	height: "35dp",
+	width: "50dp",
+	backgroundTopCap: "10dp",
+	backgroundLeftCap: "10dp",
+	color: "#fff",
+	font: {
+		fontSize: "14dp",
+		fontWeight: "bold"
+	}
+},
+"#buttonWrapper": {
+	right: 0,
+	height: Ti.UI.FILL,
+	width: Ti.UI.SIZE,
+	layout: "horizontal"
+},
+"#editBtn": {
+	right: "15dp"
+},
+"#addBtn": {
+	right: "15dp"
+},
+"#toolbar": {
+	backgroundGradient: {
+		type: 'linear',
+		colors: [
+	        {
+			color: '#4de9ff',
+			offset: 0
+		},
+	        {
+			color: '#00c0ff',
+			offset: 0.016
+		},
+	        {
+			color: '#008bff',
+			offset: 1
+		}
+	    ]
+	},
+	height: "45dp",
+	width: Ti.UI.FILL
+},
+"#itemList": {
+	backgroundColor: "#FFF",
+	top: 20,
+	left: 20,
+	right: 20,
+	borderRadius: 5
+},
+"#header": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: 44
+}

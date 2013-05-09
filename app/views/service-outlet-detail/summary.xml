@@ -1,0 +1,68 @@
+<Alloy>
+	<View class="container" title="Summary">
+		<!-- <ScrollView id="scrollContainer"> -->
+			<View id="infoBox">
+				<View id="logo" backgroundImage="appc.png"/>
+				<View id="outletDetails">
+					<Label id="outlet_id"/>
+					<Label id="outlet_name"/>
+					<View id="outlet_address">
+						<Label id="outlet_street"/>
+						<Label id="outlet_city_state_zip"/>
+					</View>
+					<View id="contact_info">
+						<Label id="contact_name_title"/>
+						<Label id="contact_phone"/>
+						<Label id="contact_email"/>
+					</View>
+				</View>
+				<View id="outletMap"/>
+			</View>
+			<View id="separator" />
+			<View id="tableViewContainer">
+				<TableView id="tableView" onClick="navClick">
+					<TableViewRow>
+						<View class="rowContainer" id="rowTasks">
+							<Label class="rowLabel" text="Tasks" />
+							<View class="view_countBg">
+								<Label id="taskCount" class="rowDetail" text="100" />
+							</View>
+							<View class="rightArrow" />
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class="rowContainer" id="rowProducts">
+							<Label class="rowLabel" text="Products" />
+							<View class="view_countBg">
+								<Label id="productCount" class="rowDetail" text="48" />
+							</View>
+							<View class="rightArrow" />
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class="rowContainer" id="rowExpenses">
+							<Label class="rowLabel" text="Expenses" />
+							<View class="view_countBg">
+								<Label id="expenseCount" class="rowDetail" text="2" />
+							</View>
+							<View class="rightArrow" />
+						</View>
+					</TableViewRow>
+					<TableViewRow>
+						<View class="rowContainer" id="rowDocuments">
+							<Label class="rowLabel" text="Documents" />
+							<View class="view_countBg">
+								<Label id="documentCount" class="rowDetail" text="5" />
+							</View>
+							<View class="rightArrow" />
+						</View>
+					</TableViewRow>
+				</TableView>
+			</View>
+			<View id="commentsView">
+				<Label id="lblServiceComments">Service Comments</Label>
+				<TextArea id="txtServiceComments" />
+			</View>
+		<!-- </ScrollView> -->
+	</View>
+</Alloy>

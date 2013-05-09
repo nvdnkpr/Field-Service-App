@@ -1,0 +1,42 @@
+"#wrapper": {
+	height: 250,
+	width: 200
+},
+"#searchView": {
+	height: 40,
+	top: 5,
+	borderWidth: 1,
+	borderColor: "#EEEEEE",
+	backgroundColor: "#FFF"
+},
+"#searchIcon": {
+	backgroundImage: "/service-outlet-detail/search-icon.png",
+	width: 19,
+	height: 19,
+	left: 10
+},
+"#txtSearch": {
+	left: 30,
+	paddingLeft: 10,
+	hintText: "Search...",
+	right: 10,
+	height: 44,
+	font: {
+		fontSize: 14
+	},
+	autocorrect: false
+},
+"#tableViewContainer": {
+	top: 50,
+	height: 200,
+	width: 200,
+	borderColor: "#EEEEEE",
+	borderWidth: 1,
+	backgroundColor: "#FFF"
+},
+"#productsTable": {
+	width: 180,
+	top: 0,
+	height: 200,
+	backgroundColor: "transparent"
+}

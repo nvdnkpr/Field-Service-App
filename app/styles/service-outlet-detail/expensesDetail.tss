@@ -1,0 +1,82 @@
+"#wrapper": {
+	top: 0,
+	height: 558,
+	left: 10,
+	width: 589,
+	backgroundColor: "#EFEFEF"
+},
+"#scrollContainer": {
+	contentHeight: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+},
+"#vDescription": {
+	left: 20,
+	top: 20,
+	right: 20,
+	height: 44,
+	backgroundColor: "#FFF",
+	borderRadius: 5
+},
+"#lblName": {
+	left: 20,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	},
+	color: "#000"
+},
+"#txtContent": {
+	right: 20,
+	left: 40,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	height: Ti.UI.FILL
+},
+"#vPrice": {
+	left: 20,
+	top: 80,
+	right: 20,
+	height: 44,
+	backgroundColor: "#FFF",
+	borderRadius: 5
+},
+"#lblTotal": {
+	left: 20,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	},
+	color: "#000"
+},
+"#txtPrice": {
+	right: 20,
+	left: 40,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	height: Ti.UI.FILL
+},
+"#lblComments": {
+	top: 134,
+	height: 20,
+	color: "#8A8A8A",
+	font: {
+		fontWeight: "bold"
+	},
+	left: 30,
+	width: Ti.UI.SIZE
+},
+"#txtComments": {
+	top: 164,
+	height: 100,
+	backgroundColor: "#FFF",
+	borderRadius: 5,
+	left: 20,
+	right: 20,
+	font: {
+		fontSize: 20
+	},
+	color: "#000"
+}

@@ -1,0 +1,23 @@
+".highlightBar": {
+	backgroundColor: '#fff',
+	top: 0,
+	height: "1dp",
+	width: Ti.UI.FILL,
+	opacity: 0.70
+},
+".shadowBar": {
+	backgroundColor: '#000',
+	bottom: 0,
+	height: 1,
+	width: Ti.UI.FILL,
+	opacity: 0.05
+},
+"TableViewRow": {
+	selectedBackgroundColor: "#aaa",
+	selectedColor: "#fff"
+},
+".vSeparator": {
+	backgroundColor: "#000",
+	width: "1dp",
+	height: Ti.UI.FILL
+}

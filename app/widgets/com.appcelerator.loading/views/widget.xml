@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="background">
+		<View id="shade"/>
+		<View layout="vertical">
+			<ImageView id="loading"></ImageView>
+			<Label id='loadingLabel'>Loading...</Label>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="wrapper" class="container">
+		<View ns="Ti.Map" id="map" onClick="mapClick">
+			<Button id="locationBtn" onClick="myLocation"/>
+			<Button id="zoomBtn" onClick="zoomMap"/>
+			<Button id="closeBtn" onClick="close"/>
+		</View>
+	</View>
+</Alloy>

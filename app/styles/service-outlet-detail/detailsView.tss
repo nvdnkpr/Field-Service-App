@@ -1,0 +1,94 @@
+".container": {
+	backgroundImage: "/common/bg.png",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	layout: "vertical"
+},
+"#detailContainer": {
+	top: 0
+},
+"#detailScroll": {
+	top: 0,
+	width: 609,
+	height: 558,
+	scrollingEnabled: false,
+	cacheSize: 7
+},
+".navBtn": {
+	height: 44,
+	width: 44
+},
+"#leftBtn": {
+	backgroundImage: "/service-outlet-detail/sub-view-previous-btn.png",
+	left: "14%"
+},
+"#rightBtn": {
+	backgroundImage: "/service-outlet-detail/sub-view-next-btn.png",
+	right: "14%"
+},
+"#menuClickOverlay": {
+	top: 0,
+	width: 300,
+	height: 44
+},
+"#infoBar": {
+	width: 717,
+	height: 72,
+	backgroundImage: "/service-outlet-detail/fixed-bg.png",
+	top: 0,
+	layout: "horizontal"
+},
+"#outlet_location_info": {
+	left: 15,
+	top: 10,
+	width: Ti.UI.SIZE,
+	height: 45
+},
+"#btnLocation": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/common/location-btn.png",
+	backgroundSelectedImage: "/common/location-btn-touch.png"
+},
+"#outlet_address": {
+	left: 55,
+	top: 0,
+	touchEnabled: "false",
+	color: "#303030"
+},
+"#outlet_city_state_zip": {
+	left: 55,
+	top: 23,
+	touchEnabled: "false",
+	color: "#303030"
+},
+"#outlet_contact_info": {
+	left: 10,
+	top: 10,
+	width: Ti.UI.SIZE,
+	height: 45
+},
+"#btnContact": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/common/contact-btn.png",
+	backgroundSelectedImage: "/common/contact-btn-touch.png"
+},
+"#outlet_contact_name": {
+	left: 55,
+	top: 0,
+	touchEnabled: "false",
+	color: "#303030"
+},
+"#outlet_contact_phone": {
+	left: 55,
+	top: 23,
+	touchEnabled: "false",
+	color: "#303030"
+},
+"#timer": {
+	left: 40,
+	top: 10
+}

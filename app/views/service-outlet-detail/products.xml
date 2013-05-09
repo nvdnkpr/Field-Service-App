@@ -1,0 +1,6 @@
+<Alloy>
+	<Collection src="items" />
+	<View id="wrapper">
+		<TableView id="itemList" onClick="openProductDetail"/>
+	</View>
+</Alloy>

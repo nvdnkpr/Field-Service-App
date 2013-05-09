@@ -1,0 +1,42 @@
+<Alloy>
+	<View id="wrapper" class="container" onClick="openDetails">
+		<View id="titleBar">
+			<Label id="outlet_tasks_count" class="label_bold"></Label>
+			<Label id="outlet_name"></Label>
+			<Label id="outlet_id" class="label_bold"></Label>
+			<!-- <View id="caretIcon" /> -->
+		</View>
+		<View id="outlet_location_contact" >
+			<View id="outlet_location_info" onClick="openDetails">
+				<Button id="btnLocation" onClick="mapClick"/>
+				<Label id="outlet_address"></Label>
+				<Label id="outlet_city_state_zip"></Label>
+			</View>
+			<View id="outlet_contact_info">
+				<Button id="btnContact" onClick="contactClick"/>
+				<Label id="outlet_contact_name"></Label>
+				<Label id="outlet_contact_phone"></Label>
+			</View>
+		</View>
+		<View id="dateContainer">
+			<Label id="lblAssigned" class="label_date">ASSIGNED</Label>
+			<Label id="assignedDate" class="label_date_value"></Label>
+			<Label id="lblModified" class="label_date">LAST MODIFIED</Label>
+			<Label id="modifiedDate" class="label_date_value"></Label>
+			<Label id="lblDue" class="label_date">DUE DATE</Label>
+			<Label id="dueDate" class="label_date_value"></Label>
+		</View>
+		<View id="bottomBar">
+			<Label id="currentTask">Current Task</Label>
+			<Widget src="com.appcelerator.globalTimer" id="timer"/>
+			<View id="statusView" onClick="showStatusPopOver" onLongpress="showStatusPopOver">
+				<Label id="lblStatus" class="label_bold">Active</Label>
+				<View id="caretIconContainer">
+					<View id="redCaretIcon" />
+				</View>
+			</View>
+			<Button id="btnNewTask" onClick="addTask"/>
+			<Label id="lblNewTask">New Task</Label>
+		</View>
+	</View>
+</Alloy>

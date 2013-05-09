@@ -1,0 +1,8 @@
+<Alloy>
+	<!--<Collection src="expenses" />-->
+	<View class="container" id="wrapper">
+		<View id="mainContainer">
+		<TableView id="expenseList" onClick="openDetail" />
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,35 @@
+"#background":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	navBarHidden: true
+},
+
+"#shade":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#000",
+	opacity: 0.9
+},
+"#loadingLabel":{
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	color: "#fff",
+	top: "10dp"
+},
+
+"#loading": {
+	height: 50,
+	width: 50,
+	images: [
+		"/images/com.appcelerator.loading/00.png", "/images/com.appcelerator.loading/01.png",
+        "/images/com.appcelerator.loading/02.png", "/images/com.appcelerator.loading/03.png",
+        "/images/com.appcelerator.loading/04.png", "/images/com.appcelerator.loading/05.png",
+        "/images/com.appcelerator.loading/06.png", "/images/com.appcelerator.loading/07.png",
+        "/images/com.appcelerator.loading/08.png", "/images/com.appcelerator.loading/09.png",
+        "/images/com.appcelerator.loading/10.png", "/images/com.appcelerator.loading/11.png"
+	]
+}

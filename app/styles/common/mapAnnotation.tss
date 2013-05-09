@@ -1,0 +1,5 @@
+".container": {
+	animated: true,
+	rightButton: "/my-service-outlets/map-mini-detail-btn.png",
+	image: "/common/map-pin-icon-inactive.png"
+}

@@ -1,0 +1,16 @@
+<Alloy>
+	<View id="wrapper">
+		<ScrollView id="scrollContainer">
+			<View id="titleContainer">
+				<Label id="lblName">Name</Label>
+				<Label id="lblNameValue" onClick="openProductsList" />
+			</View>
+			<View id="quantityContainer">
+				<Label id="lblQuantity">Quantity</Label>
+				<TextField id="txtQuantity" />
+			</View>
+			<Label id="lblComments">Comments</Label>
+			<TextArea id="txtComments" />
+		</ScrollView>
+	</View>
+</Alloy>

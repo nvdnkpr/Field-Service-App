@@ -1,0 +1,26 @@
+".container" : {
+	layout : "horizontal"
+},
+"#timeView" : {
+	left : 0,
+	width : 81,
+	height : 44,
+	backgroundImage : "/images/com.appcelerator.timer/bg.png"
+},
+"#time" : {
+	color: '#303030',
+	font: {
+		fontSize : 16,
+		fontWeight :  "bold"
+	},
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+},
+"#btnPlayPause" : {
+	left : 0,
+	height : 44,
+	width : 44,
+	backgroundImage : "/my-service-outlets/task-play-btn.png",
+	backgroundSelectedImage : "/my-service-outlets/task-play-btn-touch.png"
+}

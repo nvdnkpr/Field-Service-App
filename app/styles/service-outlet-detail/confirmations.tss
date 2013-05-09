@@ -1,0 +1,80 @@
+".container": {
+	width: 609,
+	height: 558,
+	backgroundImage: "/service-outlet-detail/sub-view-content-bg.png"
+},
+"#titleContainer": {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	top: 10
+},
+"#title": {
+	top: 0,
+	color: "#fff",
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	}
+},
+"#caretIcon": {
+	backgroundImage: "/common/caret-icon-white.png",
+	height: 7,
+	width: 10,
+	left: 10
+},
+"#rightNavBtn": {
+	right: 10,
+	top: 5,
+	height: 39,
+	width: 70,
+	font: {
+		fontWeight: "bold",
+		fontSize: 14
+	},
+	shadowColor: "#333",
+	shadowOffset: 1,
+	backgroundImage: "/service-outlet-detail/nav-btn-right-flex.png",
+	backgroundSelectedImage: "/service-outlet-detail/nav-btn-right-touch-flex.png"
+},
+"#infoBox": {
+	left: 20,
+	right: 20,
+	height: 180,
+	top: 66
+},
+"#productList": {
+	left: 20,
+	right: 20,
+	top: 47,
+	bottom: 234
+},
+"#signaturePad": {
+	left: 5,
+	width: 600,
+	bottom: 80,
+	height: 154,
+	backgroundImage: "/service-outlet-detail/summary-signature-bg.png"
+},
+"#signatureLabel": {
+	bottom: 30,
+	left: 20,
+	font: {
+		fontWeight: "bold"
+	},
+	color: "#000000",
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+
+"#clearBtn": {
+	right: 19,
+	bottom: 10,
+	width: 115,
+	height: 64,
+	color: "#000000",
+	font: {
+		fontWeight: "bold"
+	},
+	backgroundImage: "/service-outlet-detail/state-btn.png",
+	backgroundSelectedImage: "/service-outlet-detail/state-btn-touch.png"
+}

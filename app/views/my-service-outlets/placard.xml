@@ -1,0 +1,52 @@
+<Alloy>
+	<View class="container">
+		<View id="mapContainer"/>
+		<View id="wrapper">
+			<View id="titleBar">
+				<Label id="outlet_tasks_count" class="label_bold"/>
+				<Label id="outlet_name"/>
+				<Label id="outlet_id" class="label_bold"/>
+			</View>
+			<View id="contentView">
+				<View id="outlet_location_info">
+					<Button id="btnLocation"/>
+					<Label id="outlet_address"/>
+					<Label id="outlet_city_state_zip"/>
+				</View>
+				<View id="outlet_contact_info">
+					<Button id="btnContact"/>
+					<Label id="outlet_contact_name"/>
+					<Label id="outlet_contact_phone"/>
+				</View>
+				<View id="dateContainer">
+					<View class="dateView">
+						<Label id="aLabel" class="tag">A</Label>
+						<Label id="assignedDate" class="date"/>
+					</View>
+					<View class="dateView">
+						<Label id="mLabel" class="tag">M</Label>
+						<Label id="modifiedDate" class="date"/>
+					</View>
+					<View class="dateView">
+						<Label id="dLabel" class="tag">D</Label>
+						<Label id="dueDate" class="date"/>
+					</View>
+				</View>
+			</View>
+			<View id="bottomBar">
+				<View id="statusView">
+					<Label id="lblStatus" class="label_status"/>
+					<View id="caretIconContainer">
+						<View id="redCaretIcon" />
+					</View>
+				</View>
+				<!-- <View id="acceptDeclineView">
+					<Button id="btnDecline" />
+					<Label id="lblDecline" class="label_status">Decline</Label>
+					<Button id="btnAccept" />
+					<Label id="lblAccept" class="label_status">Accept</Label>
+				</View> -->
+			</View>
+		</View>
+	</View>
+</Alloy>

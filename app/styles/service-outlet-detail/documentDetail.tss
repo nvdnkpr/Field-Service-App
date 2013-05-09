@@ -1,0 +1,85 @@
+"#wrapper": {
+	top: 0,
+	height: 558,
+	left: 10,
+	width: 589,
+	backgroundColor: "#EFEFEF"
+},
+"#titleContainer": {
+	top: 20,
+	left: 20,
+	right: 20,
+	height: 44,
+	backgroundColor: "#fff"
+},
+".Name": {
+	left: 10,
+	width: 50,
+	font: {
+		fontSize: 16,
+		fontWeight: "bold"
+	},
+	height: 44
+},
+"#lblContent": {
+	left: 55,
+	right: 10,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
+},
+".Contents": {
+	right: 10,
+	height: 44
+},
+"#lblComments": {
+	top: 74,
+	left: 20,
+	height: 44
+},
+"#tfComments": {
+	top: 118,
+	left: 20,
+	right: 10,
+	height: 132,
+	hintText: "Lorem Lorem...",
+	backgroundColor: "#fff",
+	verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+},
+"#vBody": {
+	top: 220,
+	left: 20,
+	right: 20,
+	height: Ti.UI.FILL
+},
+"#vLeft": {
+	top: 54,
+	left: 0,
+	width: 200,
+	bottom: 20
+},
+"#btnShare": {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: 44,
+	title: "Share"
+},
+"#vType": {
+	top: 50,
+	widht: 200,
+	height: 44
+},
+"#webView": {
+	top: 50,
+	left: 220,
+	right: 20,
+	height: Ti.UI.SIZE,
+	backgroundColor: "#fff",
+	enableZoomControls: true
+}
+"#imageView": {
+	top: 50,
+	left: 220,
+	right: 20,
+	height: Ti.UI.SIZE,
+	backgroundColor: "#fff"
+}

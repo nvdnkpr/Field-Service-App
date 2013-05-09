@@ -1,0 +1,25 @@
+<Alloy>
+	<View id="menuContainer" class="container" >
+		<View id="mainContainer">
+			<View id="upArrow"/>
+			<View id="subContainer">
+				<TableView id="table" onClick="statusUpdate">
+					<TableViewRow id="summary" class="row" title="Summary"/>
+					<TableViewRow id="tasks" class="row" title="Tasks">
+						<Label id="taskCount" class="itemCount"/>
+					</TableViewRow> 
+					<TableViewRow id="products" class="row" title="Products"> 
+						<Label id="productCount" class="itemCount"/>
+					</TableViewRow> 
+					<TableViewRow id="expenses" class="row" title="Expenses"> 
+						<Label id="expenseCount" class="itemCount"/>
+					</TableViewRow> 
+					<TableViewRow id="documents" class="row" title="Documents">
+						<Label id="documentCount" class="itemCount"/>
+					</TableViewRow>   
+					<TableViewRow id="confirmation" class="row" title="Confirm & Submit"/> 
+				</TableView>
+			</View>
+		</View>
+	</View>
+</Alloy>

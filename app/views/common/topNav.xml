@@ -1,0 +1,30 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="typeHome" class="typeView">
+			<View id="appcLogo" />
+			<Label id="lblTitle" class="label_title">My Service Outlets</Label>
+			<View id="rightView" class="view_right">
+				<View id="profile" onClick="profileClick">
+					<ImageView id="userImage"/>
+					<Label id="userName"/>
+				</View>
+				<View class="divider" id="dividerHome1" />
+				<Button id="btnHelp" class="button_help"  onClick="infoClick"/>
+				<View class="divider" id="dividerHome2" />
+				<Button id="btnRefresh" />
+			</View>
+		</View>
+		<View id="typeDetail" class="typeView">
+			<Button id="btnHome" />
+			<Label id="lblTitleDetail" class="label_title">Detail Outlet</Label>
+			<View id="rightViewDetail" class="view_right">
+				<View class="divider" id="dividerDetail1" />
+				<Button id="btnHelpDetail" class="button_help" onClick="infoClick"/>
+				<View class="divider" id="dividerDetail2" />
+				<Button id="btnAdd" />
+				<View class="divider" id="dividerDetail3" />
+				<Button id="btnCamera"/>
+			</View>
+		</View>
+	</View>
+</Alloy>

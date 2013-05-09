@@ -1,0 +1,10 @@
+"#mainWindow": {
+	backgroundImage: "/common/bg.png",
+	backgroundColor: "#000",
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	navBarHidden: true
+},
+"#mainWindow[platform=android]": {
+	windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_ADJUST_RESIZE
+}

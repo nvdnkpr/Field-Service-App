@@ -1,0 +1,16 @@
+<Alloy>
+	<View id="wrapper">
+		<ScrollView id="scrollContainer">
+			<View id="vDescription">
+				<Label id="lblName">Description</Label>
+				<TextField id="txtContent" />
+			</View>
+			<View id="vPrice">
+				<Label id="lblTotal">Total</Label>
+				<TextField id="txtPrice" />
+			</View>
+			<Label id="lblComments">Comments</Label>
+			<TextArea id="txtComments" />
+		</ScrollView>
+	</View>
+</Alloy>

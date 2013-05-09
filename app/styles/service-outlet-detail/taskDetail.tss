@@ -1,0 +1,122 @@
+"#wrapper": {
+	top: 0,
+	height: 558,
+	left: 10,
+	width: 589,
+	backgroundColor: "#EFEFEF"
+},
+"#scrollContainer": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	layout: "vertical"
+},
+".view_container": {
+	left: 20,
+	right: 20,
+	height: 44,
+	backgroundColor: "#FFF",
+	borderRadius: 5
+}
+"#typeContainer": {
+	top: 20,
+},
+".label_title": {
+	left: 20,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	},
+	color: "#000"
+}
+"#lblTypeValue": {
+	right: 50,
+	left: 60,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	height: Ti.UI.FILL
+},
+"#txtType": {
+	right: 50,
+	left: 60,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	height: Ti.UI.FILL
+},
+".rightArrow": {
+	width: 7,
+	height: 10,
+	right: 20,
+	backgroundImage: "/service-outlet-detail/detail-icon.png"
+},
+"#timeContainer": {
+	top: 10,
+},
+"#totalTime": {
+	right: 20
+}
+".label_subtitle": {
+	top: 15,
+	height: 20,
+	color: "#8A8A8A",
+	font: {
+		fontWeight: "bold"
+	},
+	left: 30,
+	width: Ti.UI.SIZE
+}
+"#txtComments": {
+	top: 10,
+	height: Ti.UI.SIZE,
+	backgroundColor: "#FFF",
+	borderRadius: 5,
+	left: 20,
+	right: 20,
+	font: {
+		fontSize: 20
+	},
+	height: 80
+},
+".view_addTitle": {
+	top: 15,
+	height: Ti.UI.SIZE
+},
+".view_addType": {
+	left: 20,
+	right: 20,
+	top: 5,
+	height: Ti.UI.SIZE,
+	backgroundColor: "#FFF",
+	borderRadius: 5,
+	borderColor: "#EEEEEE",
+	layout: "vertical"
+},
+"#lblRelatedProducts": {
+	top: 5
+},
+"#lblRelatedExpenses": {
+	top: 5
+},
+"#lblRelatedDocuments": {
+	top: 5
+},
+".button_addType": {
+	backgroundImage: "/service-outlet-detail/task-add-related-btn.png",
+	backgroundSelectedImage: "/service-outlet-detail/task-add-related-btn-touch.png",
+	height: 30,
+	color: "#FFF",
+	width: 120,
+	right: 20,
+	font: {
+		fontSize: 14,
+		fontWeight: "bold"
+	}
+},
+"#btnAddProduct": {
+	title: "Add Product"
+},
+"#btnAddExpense": {
+	title: "Add Expense"
+},
+"#btnAddDocument": {
+	title: "Add Document"
+}

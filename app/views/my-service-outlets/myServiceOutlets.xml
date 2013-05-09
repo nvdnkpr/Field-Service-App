@@ -1,0 +1,41 @@
+<Alloy>
+	<Collection src="assignments"/>
+	<View class="container" id="container">
+		<Require src="/common/topNav" id="topNav" screen="myServiceOutlets"/>
+		<View id="activeOutletContainer">
+			<Require src="/my-service-outlets/activeOutlet" id="myActiveOutlet"/>
+		</View>
+		<View id="myOutletsContainer">
+			<View id="toolbar">
+				<View id="sortTools">
+					<Button id="listBtn" onClick="displayList" />
+					<Button id="mapBtn" onClick="openMap"/>
+					<View id="companyFilterView" class="filterView" onClick="filterNamePopover">
+						<View id="companyFilterIcon" class="filterIcon"/>
+						<Label id="companyFilter_name" class="filter_name">All</Label>
+						<View class="downArrow" />
+					</View>
+					<View id="statusFilterView" class="filterView" onClick="statusPopover">
+						<View id="statusFilterIcon" class="filterIcon"/>
+						<Label id="outletFilter_name" class="filter_name">All</Label>
+						<View class="downArrow" />
+					</View>
+					<View id="dateFilterView" class="filterView" onClick="sortDatePopover">
+						<View id="dateFilterIcon" class="filterIcon"/>
+						<Label id="dateFilter_name" class="filter_name" >Due Date, Asc</Label>
+						<View class="downArrow" />
+					</View>
+				</View>
+				<View id="searchBoxView">
+					<View id="searchIcon" />
+					<TextField id="searchBox" onReturn="searchByName" onFocus="searchFocus" onBlur="searchBlur" onChange="searchChange"/>
+					<View id="clearIcon" onClick="searchClear"/>
+				</View>
+			</View>
+			<View id="divider"/>
+			<View id="outletContainer">
+				<ScrollView id='scrollView' onClick="placardClick"/>
+			</View>
+		</View>
+	</View>
+</Alloy>

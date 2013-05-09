@@ -1,0 +1,8 @@
+<Alloy>
+	<View class="container">
+		<View id="timeView">
+			<Label id="time" />
+		</View>
+		<Button id="btnPlayPause" onClick="togglePlayPause"/>
+	</View>
+</Alloy>

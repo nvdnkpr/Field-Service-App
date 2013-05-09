@@ -1,0 +1,226 @@
+".container": {
+	backgroundImage: "/my-service-outlets/active-outlet-bg.png",
+	height: 188,
+	left: 35,
+	right: 35,
+	top: 0
+},
+"View": {
+
+},
+"Label": {
+	color: "#FFF"
+},
+"#titleBar": {
+	top: 0,
+	height: 46,
+	left: 4,
+	right: 4
+},
+".label_bold": {
+	font: {
+		fontSize: 20,
+		fontWeight: "bold"
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#outlet_tasks_count": {
+	left: 0,
+	width: 45,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	shadowColor: "#333",
+	shadowOffset: {
+		x: 0,
+		y: -1
+	}
+},
+"#outlet_name": {
+	left: 55,
+	top: 0,
+	height: Ti.UI.FILL,
+	font: {
+		fontSize: 20
+	},
+	shadowColor: "#333",
+	shadowOffset: {
+		x: 0,
+		y: -1
+	}
+},
+"#outlet_id": {
+	right: 18,
+	top: 0,
+	height: Ti.UI.FILL,
+	shadowColor: "#333",
+	shadowOffset: {
+		x: 0,
+		y: -1
+	}
+},
+"#outlet_location_contact": {
+	left: 26,
+	top: 67,
+	height: 45,
+	layout: "horizontal",
+	width: Ti.UI.SIZE
+},
+"#outlet_location_info": {
+	left: 0,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL
+},
+"#btnLocation": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/common/location-btn.png",
+	backgroundSelectedImage: "/common/location-btn-touch.png",
+	viewType: "fullscreen",
+	bubbleParent: false
+},
+"#outlet_address": {
+	left: 55,
+	top: 0,
+	color: "#303030"
+},
+"#outlet_city_state_zip": {
+	left: 55,
+	top: 23,
+	color: "#303030"
+},
+"#outlet_contact_info": {
+	left: 20,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL
+},
+"#btnContact": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/common/contact-btn.png",
+	backgroundSelectedImage: "/common/contact-btn-touch.png",
+	bubbleParent: false
+},
+"#outlet_contact_name": {
+	left: 55,
+	top: 0,
+	color: "#303030"
+},
+"#outlet_contact_phone": {
+	left: 55,
+	top: 23,
+	color: "#303030"
+},
+"#dateContainer": {
+	width: Ti.UI.SIZE,
+	right: 14,
+	height: Ti.UI.SIZE,
+	top: 60
+},
+".label_date": {
+	color: "#CDCDCD",
+	font: {
+		fontSize: 14,
+		fontWeight: "bold"
+	},
+	right: 140,
+	width: Ti.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	height: 20
+},
+".label_date_value": {
+	color: "#303030",
+	font: {
+		fontSize: 18,
+		fontWeight: "bold"
+	},
+	height: 20,
+	width: 120,
+	right: 0
+}
+"#lblAssigned": {
+	top: 0
+},
+"#assignedDate": {
+	top: 0
+},
+"#lblModified": {
+	top: 20
+},
+"#modifiedDate": {
+	top: 20
+},
+"#lblDue": {
+	top: 40
+},
+"#dueDate": {
+	top: 40
+},
+"#bottomBar": {
+	top: 135,
+	height: 45,
+	left: 4,
+	right: 4
+},
+"#currentTask": {
+	left: 22,
+	top: 2,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	color: "#CDCDCD"
+},
+"#timer": {
+	top: 2,
+	left: 140,
+	height: 44,
+	width: 125,
+	bubbleParent: false
+},
+"#statusView": {
+	width: Ti.UI.SIZE,
+	backgroundImage: "/common/btn-light-flex.png",
+	backgroundLeftCap: 6,
+	height: 36,
+	top: 5,
+	layout: "horizontal",
+	bubbleParent: false
+},
+"#lblStatus": {
+	left: 10,
+	color: "#000"
+},
+"#caretIconContainer": {
+	left: 0,
+	width: 30
+}
+"#redCaretIcon": {
+	backgroundImage: "/common/caret-icon.png",
+	width: 10,
+	height: 6
+},
+"#redCaretIcon[platform=android]": {
+	height: 10
+},
+"#lblNewTask": {
+	right: 20,
+	width: 80,
+	color: "#303030",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontWeight: "bold"
+	}
+},
+"#btnNewTask": {
+	right: 100,
+	width: 44,
+	height: 44,
+	backgroundImage: "/my-service-outlets/add-task-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/add-task-btn-touch.png",
+	bubbleParent: false
+},
+"#btnNewTask[platform=android]": {
+	height: 34
+}

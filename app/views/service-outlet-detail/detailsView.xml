@@ -1,0 +1,24 @@
+<Alloy>
+	<View class="container" id="wrapper">
+		<Require src="/common/topNav" id="topNav" screen="detail"/>
+		<View id="infoBar">
+			<View id="outlet_location_info">
+				<Button id="btnLocation" onClick="mapClick"/>
+				<Label id="outlet_address"/>
+				<Label id="outlet_city_state_zip"/>
+			</View>
+			<View id="outlet_contact_info">
+				<Button id="btnContact" onClick="contactClick"/>
+				<Label id="outlet_contact_name"/>
+				<Label id="outlet_contact_phone"/>
+			</View>
+			<Widget src="com.appcelerator.globalTimer" id="timer"/>
+		</View>
+		<Require src="/service-outlet-detail/itemHeader" id="header" title=""/>
+	  	<View id="detailContainer">
+		    <Button id="leftBtn" class="navBtn" onClick="navClick"/>
+		    <Button id="rightBtn" class="navBtn" onClick="navClick"/>
+		    <ScrollableView id="detailScroll"/>
+		</View>
+	</View>
+</Alloy>

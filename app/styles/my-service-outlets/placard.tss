@@ -1,0 +1,202 @@
+".container": {
+	top: "1%",
+	left: "1%",
+	width: "32%",
+	height: "277",
+	touchEnabled: "true"
+},
+"Label": {
+	touchEnabled: "false"
+},
+"View": {
+	touchEnabled: "false"
+},
+"#mapContainer": {
+	touchEnabled: true
+},
+"#wrapper": {
+	backgroundImage: "/my-service-outlets/inactive-outlet-bg.png",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	touchEnabled: "true"
+},
+"#titleBar": {
+	top: 0,
+	height: 44,
+	left: 5,
+	right: 5
+},
+".label_bold": {
+	shadowOffset: 2,
+	font: {
+		fontSize: 14,
+		fontWeight: "bold"
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#outlet_tasks_count": {
+	left: 0,
+	width: 44,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#FFF"
+},
+"#outlet_name": {
+	left: 55,
+	top: 0,
+	height: Ti.UI.FILL,
+	font: {
+		fontSize: 14
+	},
+	color: "#FFF"
+},
+"#outlet_id": {
+	right: 15,
+	top: 0,
+	height: Ti.UI.FILL,
+	color: "#FFF"
+},
+"#contentView": {
+	left: 27,
+	top: 67,
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	touchEnabled: "true"
+},
+"#outlet_location_info": {
+	left: 0,
+	top: 0,
+	width: Ti.UI.SIZE,
+	height: 45,
+	touchEnabled: "true"
+},
+"#btnLocation": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/common/location-btn.png",
+	backgroundSelectedImage: "/common/location-btn-touch.png",
+	viewType: "placard"
+},
+"#outlet_address": {
+	left: 55,
+	top: 0,
+	color: "#303030"
+},
+"#outlet_city_state_zip": {
+	left: 55,
+	top: 23,
+	color: "#303030"
+},
+"#outlet_contact_info": {
+	left: 0,
+	top: 10,
+	width: Ti.UI.SIZE,
+	height: 45,
+	touchEnabled: "true"
+},
+"#btnContact": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/common/contact-btn.png",
+	backgroundSelectedImage: "/common/contact-btn-touch.png"
+},
+"#outlet_contact_name": {
+	left: 55,
+	top: 0,
+	color: "#303030"
+},
+"#outlet_contact_phone": {
+	left: 55,
+	top: 23,
+	color: "#303030"
+},
+"#dateContainer": {
+	backgroundImage: "/my-service-outlets/date-bar-bg.png",
+	height: 24,
+	right: 27,
+	layout: "horizontal",
+	top: 15
+},
+".dateView": {
+	left: 0,
+	width: "33.3%"
+},
+".tag": {
+	left: 10,
+	width: Ti.UI.SIZE,
+	font: {
+		fontWeight: "bold",
+		fontSize: 10
+	},
+	color: "#999"
+},
+".date": {
+	right: 10,
+	width: Ti.UI.SIZE,
+	font: {
+		fontSize: 10
+	}
+},
+"#bottomBar": {
+	width: Ti.UI.FILL,
+	height: 60,
+	bottom: 0,
+	touchEnabled: "true"
+},
+".label_status": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	},
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL
+},
+"#statusView": {
+	width: Ti.UI.SIZE,
+	backgroundImage: "/common/btn-light-flex.png",
+	backgroundLeftCap: 6,
+	height: 36,
+	top: 12,
+	layout: "horizontal",
+	touchEnabled: "true"
+},
+"#lblStatus": {
+	left: 10
+},
+"#caretIconContainer": {
+	left: 0,
+	width: 30
+}
+"#redCaretIcon": {
+	backgroundImage: "/common/caret-icon.png",
+	width: 10,
+	height: 6
+},
+"#acceptDeclineView": {
+	left: 27,
+	right: 27,
+	height: Ti.UI.FILL
+},
+"#btnDecline": {
+	left: 0,
+	height: 44,
+	width: 44,
+	backgroundImage: "/my-service-outlets/service-outlet-decline-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/service-outlet-decline-btn-touch.png"
+},
+"#lblDecline": {
+	left: 54
+},
+"#btnAccept": {
+	right: 63,
+	height: 44,
+	width: 44,
+	backgroundImage: "/my-service-outlets/service-outlet-accept-btn.png",
+	backgroundSelectedImage: "/my-service-outlets/service-outlet-accept-btn-touch.png"
+},
+"#lblAccept": {
+	right: 0
+}

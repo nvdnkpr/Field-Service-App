@@ -1,0 +1,37 @@
+"#placeHolder": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+"#container": {
+	touchEnabled: true,
+	height: Ti.UI.SIZE,
+	backgroundImage: "/common/popover-bg-flex.png",
+	backgroundLeftCap: 34,
+	backgroundTopCap: 40
+},
+"#container[platform=android]": {
+	backgroundColor: "white"
+},
+"#viewContainer": {
+	left: 42,
+	right: 42,
+	top: 42,
+	bottom: 64
+},
+"#arrow": {
+	width: 32,
+	height: 32
+},
+"#btnClose": {
+	left: 42,
+	right: 42,
+	bottom: 42,
+	height: 44,
+	title: "Cancel",
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	},
+	backgroundImage: "/common/btn-dark-flex.png",
+	backgroundSelectedImage: "/common/btn-dark-touch-flex.png"
+}

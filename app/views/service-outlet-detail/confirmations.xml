@@ -1,0 +1,8 @@
+<Alloy>
+	<View class="container">
+		<TableView id="productList"/>
+		<View id="signaturePad"/>
+		<Label id="signatureLabel">Authorized Signature</Label>
+		<Button id="clearBtn" onClick="deleteSignature">Clear</Button>
+	</View>
+</Alloy>

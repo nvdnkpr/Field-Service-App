@@ -1,0 +1,62 @@
+".container": {
+	width: 355,
+	height: 332
+},
+"#upArrow": {
+	top: -6,
+	height: 32,
+	width: 32,
+	backgroundImage: "/common/popover-arrow-top.png"
+}
+"#mainContainer": {
+	top: -6,
+	backgroundImage: "/common/popover-bg-flex.png",
+	backgroundLeftCap: 34,
+	backgroundTopCap: 40
+},
+"#subContainer": {
+	top: 34,
+	left: 39,
+	bottom: 42,
+	right: 39,
+	borderRadius: 5
+},
+"#table": {
+	bottom: 2,
+	rowHeight: 44,
+	separatorColor: "#ECECEC",
+	scrollable: false
+},
+".itemCount": {
+	right: 20,
+	top: 10,
+	width: 40,
+	height: 25,
+	borderWidth: 1,
+	borderRadius: 5,
+	borderColor: "#CCCCCC",
+	backgroundColor: "#FEFEFE",
+	textAlign: "center",
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	}
+},
+"#taskCount": {
+	text: 10
+},
+"#productCount": {
+	text: 12
+},
+"#expenseCount": {
+	text: 6
+},
+"#documentCount": {
+	text: 3
+},
+".row": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 16
+	}
+}

@@ -1,0 +1,218 @@
+".container": {
+	width: 609,
+	height: 558,
+	backgroundImage: "/service-outlet-detail/sub-view-content-bg.png",
+	layout: "vertical"
+},
+"#scrollContainer": {
+	contentHeight: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	layout: "vertical"
+},
+"#titleContainer": {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	top: 10
+},
+"#title": {
+	top: 0,
+	color: "#fff",
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	}
+},
+"#caretIcon": {
+	backgroundImage: "/common/caret-icon-white.png",
+	height: 7,
+	width: 10,
+	left: 10
+},
+"#infoBox": {
+	left: 20,
+	right: 20,
+	height: 180,
+	top: 10
+},
+"#logo": {
+	backgroundImage: "/service-outlet-detail/logo-bg.png",
+	width: 90,
+	height: 90,
+	top: 0,
+	left: 0
+}
+"#outletDetails": {
+	left: 110,
+	height: 160,
+	top: 0,
+	right: 245
+},
+"#outlet_id": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 18
+	},
+	top: 0,
+	left: 0,
+	height: 22
+},
+"#outlet_name": {
+	top: 22,
+	left: 0,
+	font: {
+		fontSize: 16,
+		fontWeight: "bold"
+	},
+	height: 22
+},
+"#outlet_address": {
+	height: 40,
+	top: 45,
+	left: 0
+},
+"#outlet_street": {
+	left: 0,
+	top: 0,
+	height: 20,
+	font: {
+		fontSize: 14
+	}
+},
+"#outlet_city_state_zip": {
+	left: 0,
+	top: 20,
+	height: 20,
+	font: {
+		fontSize: 14
+	}
+},
+"#contact_info": {
+	top: 90,
+	height: 60,
+	left: 0
+},
+"#contact_name_title": {
+	font: {
+		fontWeight: "bold",
+		fontSize: 14
+	},
+	top: 0,
+	height: 20,
+	left: 0
+},
+"#contact_phone": {
+	font: {
+		fontSize: 14
+	},
+	top: 20,
+	height: 20,
+	left: 0
+},
+"#contact_email": {
+	font: {
+		fontSize: 14
+	},
+	top: 40,
+	height: 20,
+	left: 0
+},
+"#outletMap": {
+	height: 135,
+	right: 0,
+	top: 0,
+	width: 225,
+	animate: true,
+	regionFit: true,
+	userLocation: false
+},
+"#mapAnnotation": {
+	image: "/common/map-pin-icon-active.png"
+},
+"#separator": {
+	left: 20,
+	right: 20,
+	top: 10,
+	height: 2,
+	backgroundImage: "/service-outlet-detail/divider.png"
+},
+"#tableViewContainer": {
+	top: 10,
+	borderRadius: 5,
+	backgroundColor: "#FFF",
+	height: 176,
+	left: 20,
+	right: 20
+},
+"#tableView": {
+	top: 0,
+	right: 10,
+	left: 10,
+	height: 200,
+	backgroundColor: "transparent"
+},
+"TableViewRow": {
+	height: 44,
+	width: Ti.UI.FILL
+},
+".rowContainer": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+},
+".rowLabel": {
+	left: 10,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	font: {
+		fontSize: 16,
+		fontWeight: "bold"
+	}
+},
+".view_countBg": {
+	width: 40,
+	height: 44,
+	backgroundImage: "/service-outlet-detail/row-totals-gray-bg-flex.png",
+	backgroundLeftCap: 6,
+	right: 40
+},
+".view_taskCountBg": {
+	width: 109,
+	height: 24,
+	backgroundImage: "/service-outlet-detail/row-totals-task-bg.png",
+}
+".rowDetail": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	font: {
+		fontSize: 16,
+		fontWeight: "bold"
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".rightArrow": {
+	right: 18,
+	height: 10,
+	width: 7,
+	backgroundImage: "/service-outlet-detail/detail-icon.png"
+}
+"#commentsView": {
+	top: 10,
+	left: 20,
+	right: 20,
+	height: 140
+},
+"#lblServiceComments": {
+	top: 5,
+	left: 5,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#8A8A8A",
+	font: {
+		fontWeight: "bold"
+	}
+},
+"#txtServiceComments": {
+	top: 30,
+	height: 80,
+	width: Ti.UI.FILL
+}

@@ -1,0 +1,15 @@
+<Alloy>
+	<View id="header">
+		<View id="wrapper">
+			<View id="titleContainer">
+				<View id="itemCountView">
+					<Label id="lblItemCount" />
+				</View>
+				<Label id="title">title</Label>
+				<View id="caretIcon"/>
+			</View>
+			<Button id="rightNavButton"/>
+			<Button id="leftNavButton"/>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="placeHolder" onClick="destroy">
+		<View id="container">
+			<View id="viewContainer" />
+			<Button id="btnClose" onClick="destroy" />
+			<View id="arrow" />
+		</View>
+	</View>
+</Alloy>
