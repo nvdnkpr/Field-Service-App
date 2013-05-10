@@ -1,0 +1,234 @@
+{
+	"routes": [{
+		"path": "/",
+		"method": "post",
+		"callback": "application#indexpost"
+	}, {
+		"path": "/",
+		"method": "get",
+		"callback": "application#index"
+	}, {
+		"path": "/logout",
+		"method": "get",
+		"callback": "application#logout"
+	}, {
+		"path": "/home",
+		"callback": "application#home"
+	}, {
+		"path": "/users",
+		"method": "get",
+		"callback": "users#getUsers"
+	}, {
+		"path": "/user",
+		"method": "get",
+		"callback": "users#show"
+	}, {
+		"path": "/module/config",
+		"callback": "module_config#init"
+	}, {
+		"path": "/api/",
+		"method": "get",
+		"callback": "application#listapi"
+	}, {
+		"path": "/api",
+		"method": "get",
+		"callback": "application#listapi"
+	}, {
+		"path": "/api/v1/time",
+		"callback": "api#timedisplay"
+	},
+
+    {
+		"path": "/api/outlets/:oid",
+		"method": "get",
+		"callback": "outlets#getdetail"
+	},
+    {
+		"path": "/api/outlets",
+		"method": "get",
+		"callback": "outlets#get"
+	},
+    {
+		"path": "/api/outlets",
+		"method": "post",
+		"callback": "outlets#create"
+	},
+    {
+		"path": "/api/outlets",
+		"method": "put",
+		"callback": "outlets#update"
+	},
+    {
+		"path": "/api/outlets",
+		"method": "delete",
+		"callback": "outlets#del"
+	},
+
+    {
+		"path": "/api/assignments",
+		"method": "get",
+		"callback": "application#badendpoint"
+	},
+    {
+		"path": "/api/assignments/:userid",
+		"method": "get",
+		"callback": "assignments#get"
+	},
+    {
+		"path": "/api/assignments/detail/:aid",
+		"method": "get",
+		"callback": "assignments#getdetail"
+	},
+    {
+		"path": "/api/assignments/:userid/:status",
+		"method": "get",
+		"callback": "assignments#getstatus"
+	},
+    {
+		"path": "/api/assignments",
+		"method": "post",
+		"callback": "assignments#create"
+	},
+    {
+		"path": "/api/assignments",
+		"method": "put",
+		"callback": "assignments#update"
+	},
+    {
+		"path": "/api/assignments",
+		"method": "delete",
+		"callback": "assignments#del"
+	},
+
+    {
+		"path": "/api/tasks",
+		"method": "get",
+		"callback": "application#badendpoint"
+	},
+    {
+		"path": "/api/tasks/:assignment",
+		"method": "get",
+		"callback": "tasks#get"
+	},
+    {
+		"path": "/api/tasks",
+		"method": "post",
+		"callback": "tasks#create"
+	},
+    {
+		"path": "/api/tasks",
+		"method": "put",
+		"callback": "tasks#update"
+	},
+    {
+		"path": "/api/tasks",
+		"method": "delete",
+		"callback": "tasks#del"
+	},
+
+    {
+		"path": "/api/expenses",
+		"method": "get",
+		"callback": "application#badendpoint"
+	},
+    {
+		"path": "/api/expenses/:assignment",
+		"method": "get",
+		"callback": "expenses#get"
+	},
+    {
+		"path": "/api/expenses",
+		"method": "post",
+		"callback": "expenses#create"
+	},
+    {
+		"path": "/api/expenses",
+		"method": "put",
+		"callback": "expenses#update"
+	},
+    {
+		"path": "/api/expenses",
+		"method": "delete",
+		"callback": "expenses#del"
+	},
+
+    {
+		"path": "/api/products",
+		"method": "get",
+		"callback": "application#badendpoint"
+	},
+    {
+		"path": "/api/products/:assignment",
+		"method": "get",
+		"callback": "inventory#get"
+	},
+
+    {
+		"path": "/api/files/:assignment",
+		"method": "get",
+		"callback": "files#get"
+	},
+    {
+		"path": "/api/files",
+		"method": "get",
+		"callback": "application#badendpoint"
+	},
+    {
+		"path": "/api/files",
+		"method": "post",
+		"callback": "files#create"
+	},
+    {
+		"path": "/api/files",
+		"method": "put",
+		"callback": "files#update"
+	},
+    {
+		"path": "/api/files",
+		"method": "delete",
+		"callback": "files#del"
+	},
+
+    {
+		"path": "/api/catalog",
+		"method": "get",
+		"callback": "catalog#get"
+	},
+    {
+		"path": "/api/catalog",
+		"method": "post",
+		"callback": "catalog#create"
+	},
+    {
+		"path": "/api/catalog",
+		"method": "put",
+		"callback": "catalog#update"
+	},
+    {
+		"path": "/api/catalog",
+		"method": "delete",
+		"callback": "catalog#del"
+	},
+
+    {
+		"path": "*",
+		"callback": "application#errorpage"
+	}
+ ],
+	"filters": [
+        {
+		"path": "/user",
+		"callback": "session_filter#validateSession"
+	},
+        {
+		"path": "/home",
+		"callback": "session_filter#validateSession"
+	}
+    ],
+	"websockets": [
+        {
+		"event": "",
+		"callback": ""
+	}
+    ]
+}
