@@ -1,10 +1,40 @@
 var ACS = require("ti.cloud"),assignments = require("/data/assignments"),outlets = require("/data/outlets"),catalog = require("/data/catalog");
 var loading = Alloy.createWidget("com.appcelerator.loading");
-function createUser(){
+
+function loadData(){
+	
+	if(OS_IOS){
+		
+		var emailDialog = Ti.UI.createAlertDialog({
+			title:"Enter Email",
+			message: "Add your email for password recovery.",
+			buttonNames:["Add","Skip"],
+			style: Titanium.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT
+		});
+		
+		emailDialog.show();
+		
+		emailDialog.addEventListener("click", function(e){
+			if(e.index == 0 && e.text){
+				email = e.text;
+				createUser(email);
+			} else {
+				createUser();
+			}
+			
+		})
+	} else {
+		createUser();
+	}
+}
+
+function createUser(email){
+
 	loading.show();
 	ACS.Users.create({
 		username:"field_service_rep",
     	password:"Titanium123!",
+    	email:email || null,
     	password_confirmation: "Titanium123!",
     	first_name:"Demo User",
     	photo:Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,"/top-nav/appc-logo.png").read()
@@ -127,4 +157,4 @@ function createAssignments(userID){
 	}
 }
 
-exports.createUser = createUser;
+exports.createUser = loadData;
