@@ -6,7 +6,7 @@ function createUser(){
     	password:"Titanium123!",
     	password_confirmation: "Titanium123!",
     	first_name:"Demo User",
-    	photo:Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,"/themes/appc-red/assets/iphone/top-nav/appc-logo.png").read()
+    	photo:Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,"/top-nav/appc-logo.png").read()
 	}, function(e) {
 		if(e.success ==1){
 			for(var i in assignments.data){
