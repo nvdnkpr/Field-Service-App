@@ -1,3 +1,4 @@
+
 var ACS = require("ti.cloud");
 var assignments = require("/data/assignments");
 
@@ -6,7 +7,7 @@ function createUser(){
 		username:"field_service_rep",
     	password:"Titanium123!",
     	password_confirmation: "Titanium123!",
-    	photo:"/themes/appc-red/assets/iphone/top-nav/appc-logo.png"
+    	//photo:"/themes/appc-red/assets/iphone/top-nav/appc-logo.png"
 	}, function(e) {
 		if(e.success ==1){
 			for(var i in assignments.data){
@@ -108,5 +109,5 @@ function createAssignments(){
 	}
 }
 
-
+exports.createUser = createUser;
 

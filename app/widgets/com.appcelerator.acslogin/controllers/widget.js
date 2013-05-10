@@ -61,18 +61,20 @@ function loginClick() {
 }
 
 function createUser(){
-    Cloud.Users.create({
-        username:"field_service_rep",
-        password:"Titanium123!",
-        password_confirmation: "Titanium123!",
-        photo:"/themes/appc-red/assets/iphone/top-nav/appc-logo.png"
-    }, function(evt){
-        if(evt.success ==1){
-            alert("A demo user was created.\n\nusername:field_service_rep\npassword:Titanium123!\n\nThis data is hard coded so you can login with blank fields.");
-        } else {
-            alert(evt.message);
-        }
-    });
+	var setup = require("/data/setup");
+	setup.createUser();
+    // Cloud.Users.create({
+        // username:"field_service_rep",
+        // password:"Titanium123!",
+        // password_confirmation: "Titanium123!",
+        // photo:"/themes/appc-red/assets/iphone/top-nav/appc-logo.png"
+    // }, function(evt){
+        // if(evt.success ==1){
+            // alert("A demo user was created.\n\nusername:field_service_rep\npassword:Titanium123!\n\nThis data is hard coded so you can login with blank fields.");
+        // } else {
+            // alert(evt.message);
+        // }
+    // });
 }
 
 function forgotClick(e) {
