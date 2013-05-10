@@ -1,6 +1,7 @@
 var ACS = require("ti.cloud"),assignments = require("/data/assignments"),outlets = require("/data/outlets"),catalog = require("/data/catalog");
-
+var loading = Alloy.createWidget("com.appcelerator.loading");
 function createUser(){
+	loading.show();
 	ACS.Users.create({
 		username:"field_service_rep",
     	password:"Titanium123!",
@@ -15,6 +16,7 @@ function createUser(){
 			}
 			createOutlets(e.users[0].id);
 		} else {
+			loading.hide();
 			alert(e.message);
 		}
 	});
@@ -53,6 +55,7 @@ function createOutlets(userID){
 						createCatalog(userID);
 					}
 				} else {
+					loading.hide();
 					alert(e.message);
 				}
 				
@@ -83,6 +86,7 @@ function createCatalog(userID){
 						createAssignments(userID);
 					}
 				} else {
+					loading.hide();
 					alert(e.message);
 				}
 			});
@@ -111,9 +115,11 @@ function createAssignments(userID){
 				if(e.success ==1){
 					count++;
 					if(count == assignments.data.length-1){
-						alert("A demo user and demo data has been created.\n\nusername:field_service_rep\npassword:Titanium123!\n\nThis data is hard coded so you can login with blank fields.");
+						loading.hide();
+						alert("A demo user and demo data has been created.\n\nusername: field_service_rep\npassword: Titanium123!\n\nThis data is hard coded so you can login with blank fields.");
 					}
 				} else {
+					loading.hide();
 					alert(e.message);
 				}
 			});
