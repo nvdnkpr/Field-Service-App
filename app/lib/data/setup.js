@@ -1,16 +1,16 @@
-
-var ACS = require("ti.cloud");
-var assignments = require("/data/assignments");
+var ACS = require("ti.cloud"),assignments = require("/data/assignments"),outlets = require("/data/outlets"),catalog = require("/data/catalog");
 
 function createUser(){
 	ACS.Users.create({
 		username:"field_service_rep",
     	password:"Titanium123!",
     	password_confirmation: "Titanium123!",
-    	//photo:"/themes/appc-red/assets/iphone/top-nav/appc-logo.png"
+    	first_name:"Demo User",
+    	photo:Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,"/themes/appc-red/assets/iphone/top-nav/appc-logo.png").read()
 	}, function(e) {
 		if(e.success ==1){
 			for(var i in assignments.data){
+				
 				assignments.data[i].userID = e.users[0].id
 			}
 			createOutlets(e.users[0].id);
@@ -19,11 +19,10 @@ function createUser(){
 		}
 	});
 }
-
 	
 function createOutlets(userID){
-	var outlets = require("/data/outlets");
 	
+	var count = 0;
 	if (outlets.data && outlets.data.length > 0) {
 		for (i = 0; i < outlets.data.length; i++) {
 			ACS.Objects.create({
@@ -47,25 +46,29 @@ function createOutlets(userID){
 				}
 				
 			}, function(e) {
-				assignments.data[i].outlet_id = e.outlets[0].id;
-				if(i = outlets.data.length-1){
-					createOutlets();
+				if(e.success ==1){
+					assignments.data[count].outlet_id = e.outlets[0].id;
+					count++
+					if(count == outlets.data.length){
+						createCatalog(userID);
+					}
+				} else {
+					alert(e.message);
 				}
 				
 			});
 		} 	
 	}
-	
 }
 
-function createCatalog(){
-	var catalog = require("/data/catalog");
-
+function createCatalog(userID){
+	
+	var count = 0;
 	if (catalog.data && catalog.data.length > 0) {
 		for (i = 0; i < catalog.data.length; i++) {
 			ACS.Objects.create({
 				classname: 'catalog',
-				user_id: admin,
+				user_id: userID,
 				fields: {
 					name: catalog.data[i].name,
 					description: catalog.data[i].description,
@@ -74,35 +77,44 @@ function createCatalog(){
 				}
 
 			}, function(e) {
-				if(i = catalog.data.length-1){
-					createAssignments();
+				if(e.success ==1){
+					count++;
+					if(i == catalog.data.length){
+						createAssignments(userID);
+					}
+				} else {
+					alert(e.message);
 				}
 			});
 		}
 	}
 }
 
-function createAssignments(){
-	var assign = require("/data/assignments");
-
-	if (assign && assign.data.length > 0) {
-		for (i = 0; i < assign.data.length; i++) {
+function createAssignments(userID){
+	var count = 0;
+	if (assignments && assignments.data.length > 0) {
+		for (i = 0; i < assignments.data.length; i++) {
 			ACS.Objects.create({
 				classname: 'assignment',
-				user_id: admin,
+				user_id: userID,
 				fields: {
-					aid: assign.data[i].aid,
-					dateM: assign.data[i].dateModified,
-					dateC: assign.data[i].dateCreate,
-					dateA: assign.data[i].dateActive,
-					assigneduser: assign.data[i].userID,
-					"[CUSTOM_outlets]outlet_id": assign.data[i].outlet_id,
-					oid: assign.data[i].oid,
-					status: assign.data[i].status
+					aid: assignments.data[i].aid,
+					dateM: assignments.data[i].dateModified,
+					dateC: assignments.data[i].dateCreate,
+					dateA: assignments.data[i].dateActive,
+					assigneduser: assignments.data[i].userID,
+					"[CUSTOM_outlets]outlet_id": assignments.data[i].outlet_id,
+					oid: assignments.data[i].oid,
+					status: assignments.data[i].status
 				}
 			}, function(e) {
-				if(i = catalog.data.length-1){
-					alert("A demo user and demo data has been created.\n\nusername:field_service_rep\npassword:Titanium123!\n\nThis data is hard coded so you can login with blank fields.");
+				if(e.success ==1){
+					count++;
+					if(count == assignments.data.length-1){
+						alert("A demo user and demo data has been created.\n\nusername:field_service_rep\npassword:Titanium123!\n\nThis data is hard coded so you can login with blank fields.");
+					}
+				} else {
+					alert(e.message);
 				}
 			});
 		}
@@ -110,4 +122,3 @@ function createAssignments(){
 }
 
 exports.createUser = createUser;
-
