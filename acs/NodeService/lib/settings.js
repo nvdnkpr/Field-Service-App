@@ -16,9 +16,7 @@ var OBJ = {
 		tasks: 'tasks'
 	},
 	credentials: {
-		appkey: '[REPLACE WITH acs-api-key-development FROM tiapp.xml]',
-		key: '',
-		secret: ''
+		appkey: '[REPLACE WITH acs-api-key-development FROM tiapp.xml]'
 	}
 };
 
