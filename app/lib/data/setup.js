@@ -45,6 +45,12 @@ function createUser(email){
 				assignments.data[i].userID = e.users[0].id
 			}
 			createOutlets(e.users[0].id);
+			ACS.KeyValues.set({
+			    name: 'API',
+			    value: 'ACS'
+			}, function (e) {
+			    
+			});
 		} else {
 			loading.hide();
 			alert(e.message);
