@@ -3,7 +3,7 @@ var settings = require('../lib/settings').load(),
 	menuSelect = "login",
 	ACS = require('acs').ACS;
 
-ACS.init(settings.credentials.key, settings.credentials.secret);
+ACS.init(settings.credentials.appkey);
 
 function index(req, res) {
 	res.render('index', {
