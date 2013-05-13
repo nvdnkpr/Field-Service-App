@@ -1129,9 +1129,9 @@ function searchByName(evt) {
 		return data.search.indexOf(filterData) !== -1;
 	});
 	for(var i in searchData) {
-		//Weird workaround for data from collection (JSON.stringify then JSON.parse)
+		
 		results.data.push({
-			outlet: searchData[i].toJSON()
+			outlet: searchData[i]
 		});
 	}
 
