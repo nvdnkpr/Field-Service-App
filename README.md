@@ -3,8 +3,7 @@ Field-Service-App
 
 The Field Service app
 
-
-
+Sample mobile app created with Appcelerator Alloy and Titanium SDK.
 
 =================================
 Stuff our legal folk make us say:
