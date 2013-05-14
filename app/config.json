@@ -1,5 +1,7 @@
 {
-    "global": {},
+    "global": {
+        "skipLogin": true
+    },
     "env:development": {},
     "env:test": {},
     "env:production": {},

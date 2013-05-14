@@ -59,6 +59,9 @@ function loginClick() {
         
     });
 }
+exports.loginClick = function() {
+	loginClick();
+}
 
 function createUser(){
 	var setup = require("/data/setup");

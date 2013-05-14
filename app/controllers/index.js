@@ -17,10 +17,16 @@ function login(params) {
 			opacity: 0.0
 		});
 	}
-	Alloy.Globals.MainWindow.add(Alloy.Globals.Login.getView());
+	
 	Alloy.Globals.Login.init({
 		loginCallback: initHome
 	});
+
+	if (Alloy.CFG.skipLogin) {
+		Alloy.Globals.Login.loginClick();
+	} else {
+		Alloy.Globals.MainWindow.add(Alloy.Globals.Login.getView());
+	}
 }
 
 //Initialize the home screen on successful login
